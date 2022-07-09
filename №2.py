@@ -1,7 +1,6 @@
 import wikipediaapi
 from datetime import datetime
 
-start_time = datetime.now()
 wiki_wiki = wikipediaapi.Wikipedia('ru')
 
 animals = wiki_wiki.page('Категория:Животные по алфавиту')
@@ -38,90 +37,67 @@ ya = 0
 for animal in animals.categorymembers.values():
     if animal.title[0].upper() == 'А':
         a += 1
-    if animal.title[0].upper() == 'Б':
+    elif animal.title[0].upper() == 'Б':
         b += 1
-    if animal.title[0].upper() == 'В':
+    elif animal.title[0].upper() == 'В':
         v += 1
-    if animal.title[0].upper() == 'Г':
+    elif animal.title[0].upper() == 'Г':
         g += 1
-    if animal.title[0].upper() == 'Д':
+    elif animal.title[0].upper() == 'Д':
         d += 1
-    if animal.title[0].upper() == 'Е':
+    elif animal.title[0].upper() == 'Е':
         e += 1
-    if animal.title[0].upper() == 'Ж':
+    elif animal.title[0].upper() == 'Ж':
         j += 1
-    if animal.title[0].upper() == 'З':
+    elif animal.title[0].upper() == 'З':
         z += 1
-    if animal.title[0].upper() == 'И':
+    elif animal.title[0].upper() == 'И':
         i += 1
-    if animal.title[0].upper() == 'Й':
+    elif animal.title[0].upper() == 'Й':
         yi += 1
-    if animal.title[0].upper() == 'К':
+    elif animal.title[0].upper() == 'К':
         k += 1
-    if animal.title[0].upper() == 'Л':
+    elif animal.title[0].upper() == 'Л':
         l += 1
-    if animal.title[0].upper() == 'М':
+    elif animal.title[0].upper() == 'М':
         m += 1
-    if animal.title[0].upper() == 'Н':
+    elif animal.title[0].upper() == 'Н':
         n += 1
-    if animal.title[0].upper() == 'О':
+    elif animal.title[0].upper() == 'О':
         o += 1
-    if animal.title[0].upper() == 'П':
+    elif animal.title[0].upper() == 'П':
         p += 1
-    if animal.title[0].upper() == 'Р':
+    elif animal.title[0].upper() == 'Р':
         r += 1
-    if animal.title[0].upper() == 'С':
+    elif animal.title[0].upper() == 'С':
         s += 1
-    if animal.title[0].upper() == 'Т':
+    elif animal.title[0].upper() == 'Т':
         t += 1
-    if animal.title[0].upper() == 'У':
+    elif animal.title[0].upper() == 'У':
         u += 1
-    if animal.title[0].upper() == 'Ф':
+    elif animal.title[0].upper() == 'Ф':
         f += 1
-    if animal.title[0].upper() == 'Х':
+    elif animal.title[0].upper() == 'Х':
         h += 1
-    if animal.title[0].upper() == 'Ц':
+    elif animal.title[0].upper() == 'Ц':
         c += 1
-    if animal.title[0].upper() == 'Ч':
+    elif animal.title[0].upper() == 'Ч':
         ch += 1
-    if animal.title[0].upper() == 'Ш':
+    elif animal.title[0].upper() == 'Ш':
         sh += 1
-    if animal.title[0].upper() == 'Щ':
+    elif animal.title[0].upper() == 'Щ':
         sha += 1
-    if animal.title[0].upper() == 'Э':
+    elif animal.title[0].upper() == 'Э':
         ey += 1
-    if animal.title[0].upper() == 'Ю':
+    elif animal.title[0].upper() == 'Ю':
         y += 1
-    if animal.title[0].upper() == 'Я':
+    elif animal.title[0].upper() == 'Я':
         ya += 1
 
-print('А: ' + str(a))
-print('Б: ' + str(b))
-print('В: ' + str(v))
-print('Г: ' + str(g))
-print('Д: ' + str(d))
-print('Е: ' + str(e))
-print('Ж: ' + str(j))
-print('З: ' + str(z))
-print('И: ' + str(i))
-print('Й: ' + str(yi))
-print('К: ' + str(k))
-print('Л: ' + str(l))
-print('М: ' + str(m))
-print('Н: ' + str(n))
-print('О: ' + str(o))
-print('П: ' + str(p))
-print('Р: ' + str(r))
-print('С: ' + str(s))
-print('Т: ' + str(t))
-print('У: ' + str(u))
-print('Ф: ' + str(f))
-print('Х: ' + str(h))
-print('Ц: ' + str(c))
-print('Ч: ' + str(ch))
-print('Ш: ' + str(sh))
-print('Щ: ' + str(sha))
-print('Э: ' + str(ey))
-print('Ю: ' + str(y))
-print('Я: ' + str(ya))
-print(datetime.now() - start_time)
+print('А: ' + str(a) + '\n' + 'Б: ' + str(b) + '\n' + 'В: ' + str(v) + '\n' + 'Г: ' + str(g) + '\n' + 'Д: ' + str(d) +
+      '\n' + 'Е: ' + str(e) + '\n' + 'Ж: ' + str(j) + '\n' + 'З: ' + str(z) + '\n' + 'И: ' + str(i) + '\n' + 'Й: ' +
+      str(yi) + '\n' + 'К: ' + str(k) + '\n' + 'Л: ' + str(l) + '\n' + 'М: ' + str(m) + '\n' + 'Н: ' + str(n) + '\n' +
+      'О: ' + str(o) + '\n' + 'П: ' + str(p) + '\n' + 'Р: ' + str(r) + '\n' + 'С: ' + str(s) + '\n' + 'Т: ' + str(t) +
+      '\n' + 'У: ' + str(u) + '\n' + 'Ф: ' + str(f) + '\n' + 'Х: ' + str(h) + '\n' + 'Ц: ' + str(c) + '\n' + 'Ч: ' +
+      str(ch) + '\n' + 'Ш: ' + str(sh) + '\n' + 'Щ: ' + str(sha) + '\n' + 'Э: ' + str(ey) + '\n' + 'Ю: ' + str(y) +
+      '\n' + 'Я: ' + str(ya))
